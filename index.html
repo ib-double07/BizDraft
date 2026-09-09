@@ -317,7 +317,7 @@
           </article>
 
           <!-- PROJECT 2: CGPA Calculator -->
-          <article class="project-card reveal delay-1">
+          <article class="project-card reveal delay-1" data-modal="modal-cgpa">
             <div class="project-media">
               <img src="assets/images/cgpa.jpg" alt="Screenshot of the CGPA Calculator" loading="lazy"
                    onerror="this.style.display='none'; this.parentElement.classList.add('media-fallback');" />
@@ -336,8 +336,9 @@
                 <li>HTML</li><li>CSS</li><li>TypeScript</li>
               </ul>
               <div class="project-actions">
-                <a href="https://full-stack-ai-cgpa-calculator-th1x.onrender.com/" class="btn btn-sm btn-primary" target="_blank" rel="noopener">Live Demo</a>
-                <a href="https://github.com/ib-double07/Full-Stack-AI-CGPA-Calculator" class="btn btn-sm btn-outline" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://full-stack-ai-cgpa-calculator-th1x.onrender.com/" class="btn btn-sm btn-primary" target="_blank" rel="noopener" data-stop>Live Demo</a>
+                <a href="https://github.com/ib-double07/Full-Stack-AI-CGPA-Calculator" class="btn btn-sm btn-outline" target="_blank" rel="noopener" data-stop>GitHub</a>
+                <button type="button" class="btn btn-sm btn-ghost" data-modal="modal-cgpa">Details →</button>
               </div>
             </div>
           </article>
@@ -644,6 +645,46 @@
       <div class="modal-actions">
         <a href="PROJECT_1_LIVE_URL" class="btn btn-primary btn-sm" target="_blank" rel="noopener">View Project</a>
         <a href="PROJECT_1_GITHUB_URL" class="btn btn-outline btn-sm" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== PROJECT MODAL: CGPA CALCULATOR ==================== -->
+  <div class="modal" id="modal-cgpa" role="dialog" aria-modal="true" aria-labelledby="modalCgpaTitle" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog">
+      <button class="modal-close" data-close-modal aria-label="Close dialog">✕</button>
+
+      <h3 class="modal-title" id="modalCgpaTitle">CGPA Calculator with AI Guide</h3>
+      <ul class="project-tech modal-tech">
+        <li>HTML</li><li>CSS</li><li>TypeScript</li><li>FastAPI</li><li>PostgreSQL</li>
+      </ul>
+
+      <div class="modal-section">
+        <h4>Problem</h4>
+        <p>Tracking CGPA by hand across semesters is tedious and easy to get wrong, and students often have little guidance on how to improve their standing.</p>
+      </div>
+
+      <div class="modal-section">
+        <h4>Solution</h4>
+        <p>A full-stack academic tool that calculates and tracks CGPA automatically, backed by an AI guide that offers study tips and predictions.</p>
+      </div>
+
+      <div class="modal-section">
+        <h4>Key Features</h4>
+        <ul class="modal-features">
+          <li>Student login and account management</li>
+          <li>Automatic CGPA calculation</li>
+          <li>Score charts to track performance over time</li>
+          <li>AI-powered study tips</li>
+          <li>AI-based CGPA prediction</li>
+          <li>Built-in AI chat assistant</li>
+        </ul>
+      </div>
+
+      <div class="modal-actions">
+        <a href="https://full-stack-ai-cgpa-calculator-th1x.onrender.com/" class="btn btn-primary btn-sm" target="_blank" rel="noopener">View Project</a>
+        <a href="https://github.com/ib-double07/Full-Stack-AI-CGPA-Calculator" class="btn btn-outline btn-sm" target="_blank" rel="noopener">GitHub</a>
       </div>
     </div>
   </div>
